@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Quiz PKN</string>
+    <string name="title_activity_high_scores">HighScores</string>
+</resources>

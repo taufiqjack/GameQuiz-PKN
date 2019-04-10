@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HighScore">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textScore"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="Skor Anda :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textHighScore"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:background="#d4390a"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="Skor Tertinggi :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick"
+            android:background="#9DE"
+            android:text="Coba Lagi" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
